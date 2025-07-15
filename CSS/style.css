@@ -20,6 +20,9 @@ html, body {
   --second-bg:#EDEDED;
  
 }
+h2{
+  font-size: 1.125rem;
+}
 
 body {
   min-height: 100vh;
@@ -510,7 +513,7 @@ footer {
   font-size: 32px;
 }
 
-.signIn-button , .ac-web-button{
+.signIn-button , .ac-web-button , .profile-update-button{
 background-color: var(--pw-gold);
 padding: 12px 20px;
 gap: 10px;
@@ -729,6 +732,84 @@ padding: 15px;
 .ac-content-description{
   line-height: 24px;
 }
+ /*Profile.html*/
+
+ .form-container {
+      max-width: 350px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 15px;
+     
+    }
+    .form-group {
+      margin: 15px 0;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid var(--second-bg);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    .form-group input[type="submit"] {
+      background-color: var(--pw-gold);
+      color: var();
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #ecb52a;
+    }
+    .phone-input-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.phone-input-group select,
+.phone-input-group input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+ 
+}
+
+.phone-input-group select {
+  max-width: 120px;
+}
+
+.phone-input-group input {
+  flex: 1;
+}
+
+ .material-icons .profile-icon{
+  font-size: 53px;
+ }
+ .form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .alert.required {
+  font-size: 0.75rem;
+}
+
 @media (max-width: 400px) {
   .app {
     width: 100px;
@@ -748,8 +829,9 @@ padding: 15px;
   .outageBanner p,
   .knownIssuesBanner p,
   .actionButton a {
-    font-size: 12px;
-  }
+  font-size: 0.75rem;
+}
+ 
 
   .hamburger {
     width: 24px;
