@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="icon" href="src/logos/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="JS/script.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- Header and Navigation  -->
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="src/logos/logo.svg" alt="Companion" /></a>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="academicCenter.html">Academic Center</a>
+      </li>
+      <li>
+        <a href="apps.html">Apps</a>
+      </li>
+      <hr class="menu-hr">
+      <li class="menu-hidden">
+        <a href="#">Profile</a>
+      </li>
+      <li class="menu-hidden">
+        <a href="#">Account</a></li>
+      <hr class="menu-hr">
+      <li class="menu-hidden">
+        <a href="signIn.html" class="alert">Sign Out</a></li>
+      <li class="menu-hidden-mobile">
+        <a href="#" class="settings-menu"><span class="material-icons">settings</span></a>
+      </li>
+    </ul>
+    <!--Hamburguer Menu-->
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+  <!--Modal Desktop-->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeProfileModal">&times;</span>
+
+      <ul class="profile-options">
+        <li>
+          <a href=""><span class="material-icons">account_circle</span> Edit Profile</a>
+        </li>
+        <li>
+          <a href=""><span class="material-icons">settings</span> Settings</a>
+        </li>
+        <li><a href="signIn.html"><span class="material-symbols-outlined">logout</span> Sign Out</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <div class="main-box">
+
+      <div class="welcome">
+        <p class="hellomessage">Hello &#128075;</p>
+        <p class="username">John Doe Smith</p>
+      </div>
+      <br>
+
+      <div class="outageBanner">
+        <span class="material-icons">error</span>
+        <p>OUTAGE ALERT: Ariel deleted Companion PWA in prod.</p>
+        <p class="actionButton">
+          <a href="">View Details</a>
+        </p>
+      </div>
+      <br>
+
+      <div class="knownIssuesBanner">
+        <span class="material-icons">error</span>
+        <p>Known Issues: List of issues impacting many students.</p>
+        <p class="actionButton">
+          <a href="">View Details</a>
+        </p>
+      </div>
+      <br />
+      <div class="index-services-main">
+        <p class="subheaders">Apps</p>
+        <div class="apps-row">
+          <a href="aiAssistants.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/live-chat.svg" alt="AI Assistants" />
+              <p>AI</p>
+              <p>Assistants</p>
+            </div>
+          </a>
+          <a href="academicCenter.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/004-graduate.svg" alt="Academic Center" />
+              <p>Academic</p>
+              <p>Center</p>
+            </div>
+          </a>
+          <a href="network.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/webinar.svg" alt="Network" />
+              <p>Network</p>
+            </div>
+          </a>
+          <a href="jobs.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/003-briefcase.svg" alt="Jobs" />
+              <p>Jobs</p>
+            </div>
+          </a>
+          <a href="tickets.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/092-customer-support.svg" alt="Tickets" />
+              <p>Tickets</p>
+            </div>
+          </a>
+          <!-- <a href="apps.html" class="app-link">
+          <div class="app">
+            <img src="./src/flaticon/three-arrows.svg" alt="See all"/>
+            <p>See all apps</p>
+          </div>
+        </a>--->
+        </div>
+
+        <div class="academic-services">
+          <p class="subheaders">Academic Services</p>
+
+          <div class="apps-row">
+            <a href="sumbittedRequests.html" class="app-link  submitted-requests">
+              <div class="app">
+                <img src="./src/flaticon/task-list.svg" alt="Submitted Requests" />
+                <p>Submitted Requests</p>
+              </div>
+            </a>
+            <a href="enrollmentVerification.html" class="app-link">
+              <div class="app">
+                <img src="./src/flaticon/document.svg" alt="Enrollment Verification" />
+                <p>Enrollment Verification</p>
+              </div>
+            </a>
+            <a href="officialTranscript.html" class="app-link">
+              <div class="app">
+                <img src="./src/flaticon/stamp-tool.svg" alt="Official Transcript Request" />
+                <p>Official Transcript Request</p>
+              </div>
+            </a>
+            <a href="graduationApplication.html" class="app-link">
+              <div class="app">
+                <img src="./src/flaticon/graduation-date.svg" alt="Graduation Application" />
+                <p>Graduation Application</p>
+              </div>
+            </a>
+            <a href="apps.html" class="app-link">
+              <div class="app">
+                <img src="./src/flaticon/three-arrows.svg" alt="See all" />
+                <p>See all Services</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>No more items to display</p>
+    </footer>
+
+  </main>
+</body>
+
+</html>

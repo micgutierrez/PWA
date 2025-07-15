@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apps</title>
+  <link rel="icon" href="src/logos/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="JS/script.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="apps-page">
+
+  <!-- Header and Navigation  -->
+
+  <nav>
+    <div class="logo">
+
+      <a href="index.html"><img src="src/logos/logo.svg" alt="Companion" /></a>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+       <a href="academicCenter.html">Academic Center</a>
+      </li>
+      <li>
+        <a href="apps.html">Apps</a>
+      </li>
+      <hr class="menu-hr">
+      <li class="menu-hidden">
+        <a href="#">Profile</a>
+      </li>
+      <li class="menu-hidden">
+        <a href="#">Account</a></li>
+      <hr class="menu-hr">
+      <li class="menu-hidden">
+        <a href="signIn.html" class="alert">Sign Out</a></li>
+
+      <li class="menu-hidden-mobile">
+        <a href="#" class="settings-menu"><span class="material-icons">settings</span></a>
+      </li>
+    </ul>
+    <!--Hamburguer Menu-->
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+  <!--Modal Desktop-->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeProfileModal">&times;</span>
+
+      <ul class="profile-options">
+        <li>
+          <a href=""><span class="material-icons">account_circle</span> Edit Profile</a>
+        </li>
+
+        <li>
+          <a href=""><span class="material-icons">settings</span> Settings</a>
+        </li>
+        <li><a href="signIn.html"><span class="material-symbols-outlined">logout</span> Sign Out</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <div class="main-box">
+      <div class="apps-services-main">
+        <p class="subheaders title-apps">Apps</p>
+        <div class="apps-row">
+          <a href="aiAssistants.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/live-chat.svg" alt="AI Assistants" />
+              <p>AI</p>
+              <p>Assistants</p>
+            </div>
+          </a>
+          <a href="academicCenter.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/004-graduate.svg" alt="Academic Center" />
+              <p>Academic</p>
+              <p>Center</p>
+            </div>
+          </a>
+          <a href="network.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/webinar.svg" alt="Network" />
+              <p>Network</p>
+            </div>
+          </a>
+          <a href="jobs.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/003-briefcase.svg" alt="Jobs" />
+              <p>Jobs</p>
+            </div>
+          </a>
+          <a href="tickets.html" class="app-link">
+            <div class="app">
+              <img src="./src/flaticon/092-customer-support.svg" alt="Tickets" />
+              <p>Tickets</p>
+            </div>
+          </a>
+
+        </div>
+        <hr class="section-divider" />
+
+        <p class="subheaders  title-apps">Academic Services</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="./src/flaticon/task-list.svg" alt="Submitted Requests" />
+            <div class="services-text">
+              <p class="service-title">Submitted Requests</p>
+              <p class="service-desc">Check the status of your Academic Services requests: All, Open, or Closed.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="./src/flaticon/stamp-tool.svg" alt="Official Transcript" />
+            <div class="services-text">
+              <p class="service-title">Official Transcript</p>
+              <p class="service-desc">Request and receive official transcripts for academic and professional purposes.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="./src/flaticon/search-Icon.svg" alt="Academic Exceptions" />
+            <div class="services-text">
+              <p class="service-title">Academic Exceptions</p>
+              <p class="service-desc">Submit and review requests for exceptions to academic policies.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="./src/flaticon/document.svg" alt="Enrollment Verification" />
+            <div class="services-text">
+              <p class="service-title">Enrollment Verification</p>
+              <p class="service-desc">Obtain official proof of enrollment for employment, scholarships, or other
+                verifications.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="./src/flaticon/graduation-date.svg" alt="Graduation Application" />
+            <div class="services-text">
+              <p class="service-title">Graduation Application</p>
+              <p class="service-desc">Apply for graduation, and ensure you meet all requirements.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="./src/flaticon/three-arrows.svg" alt="Registration" />
+            <div class="services-text">
+              <p class="service-title">Registration</p>
+              <p class="service-desc">Register for courses, manage your class schedule, and access important enrollment
+                deadlines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>No more items to display</p>
+    </footer>
+
+  </main>
+</body>
+
+</html>

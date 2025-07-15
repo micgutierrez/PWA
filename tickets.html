@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tickets</title>
+    <link rel="icon" href="src/logos/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Header and Navigation  -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="src/logos/logo.svg" alt="Companion" /></a>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="academicCenter.html">Academic Center</a>
+            </li>
+            <li>
+                <a href="apps.html">Apps</a>
+            </li>
+            <hr class="menu-hr">
+            <li class="menu-hidden">
+                <a href="#">Profile</a>
+            </li>
+            <li class="menu-hidden">
+                <a href="#">Account</a></li>
+            <hr class="menu-hr">
+            <li class="menu-hidden">
+                <a href="signIn.html" class="alert">Sign Out</a></li>
+            <li class="menu-hidden-mobile">
+                <a href="#" class="settings-menu"><span class="material-icons">settings</span></a>
+            </li>
+        </ul>
+        <!--Hamburguer Menu-->
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeProfileModal">&times;</span>
+
+            <ul class="profile-options">
+                <li>
+                    <a href=""><span class="material-icons">account_circle</span> Edit Profile</a>
+                </li>
+                <li> 
+                    <a href=""><span class="material-icons">settings</span> Settings</a>
+                </li>
+                <li><a href="signIn.html"><span class="material-symbols-outlined">logout</span> Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="main-box">
+        
+            <div class="ticketsBox">
+                   <div class="welcome">
+   
+        <p class="username">Tickets</p>
+      </div>
+                   
+                <div class="openTickets">
+                    <p>Open Tickets</p> 
+                    <p>Track tickets in progress</p>
+                </div>
+                <div class="closedTickets">
+                    <p>Closed Tickets</p> 
+                    <p>View tickets that have been resolved</p>
+                </div>
+                <div class="submitTickets">
+                    <p>Submit Tickets</p> 
+                    <p>Create and submit a new request</p>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </main>
+
+</body>
+
+</html>

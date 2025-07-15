@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Academic Progress</title>
+    <link rel="icon" href="src/logos/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Header and Navigation  -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="src/logos/logo.svg" alt="Companion" /></a>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="academicCenter.html">Academic Center</a>
+            </li>
+            <li>
+                <a href="apps.html">Apps</a>
+            </li>
+            <hr class="menu-hr">
+            <li class="menu-hidden">
+                <a href="#">Profile</a>
+            </li>
+            <li class="menu-hidden">
+                <a href="#">Account</a></li>
+            <hr class="menu-hr">
+            <li class="menu-hidden">
+                <a href="signIn.html" class="alert">Sign Out</a></li>
+            <li class="menu-hidden-mobile">
+                <a href="#" class="settings-menu"><span class="material-icons">settings</span></a>
+            </li>
+        </ul>
+        <!--Hamburguer Menu-->
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeProfileModal">&times;</span>
+
+            <ul class="profile-options">
+                <li>
+                    <a href=""><span class="material-icons">account_circle</span> Edit Profile</a>
+                </li>
+                <li>
+                    <a href=""><span class="material-icons">settings</span> Settings</a>
+                </li>
+                <li><a href="signIn.html"><span class="material-symbols-outlined">logout</span> Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="main-box">
+            <h1>Academic Center</h1>
+            <br>
+            <h2>My Academic Progress</h2>
+            <br>
+            <p>The information displayed here is only an interpretation of your Degree Progress Audit and does not constitute your official academic record. If you have questions or need clarification, please contact your mentor or schedule a meeting with an Academic Advisor.</p>
+        <div class="ac-container">
+          <div class="ac-progress-box" >
+            <p class="university-title">BYU-Idaho</p>
+                <div class="ac-name-credits">
+                    <p class="bachelors-name">Bachelor of Software Development</p>
+                   <p class="total-credits" >25 / 92</p> 
+            </div>
+                    <div class="ac-progress-bar-box">
+            <div class="ac-progress-bar" ></div>
+            <p class="progress-bar-text" >0% Completed</p>
+            </div>
+
+                <div class="ac-content-description">
+                <p class="certificates certificate-1">C1: Web & Computer Programming</p>
+                <p class="certificates certificate-2">C2: Web Development </p>
+                <p class="certificates certificate-3">C3: Software Development </p>
+                </div>
+            <p class="ac-gpa">GPA:3.72</p>    
+          </div>
+           <div class="ac-progress-box" >
+            <p class="university-title">BYU-Idaho</p>
+                <div class="ac-name-credits">
+                    <p class="bachelors-name">Web Development v2022 SP</p>
+                   <p class="total-credits" >6 / 15</p> 
+            </div>
+                    <div class="ac-progress-bar-box">
+            <div class="ac-progress-bar" ></div>
+            <p class="progress-bar-text" >0% Completed</p>
+            </div>
+
+                <div class="ac-content-description">
+                <p class="certificates certificate-1">CSE340 - Web Backend Development</p>
+                <p class="certificates certificate-2">CSE341 - Web Services </p>
+                <p class="certificates certificate-3">WDD430 - Web Full-Stack Development </p>
+                </div>
+            <p class="ac-gpa">GPA:3.72</p>    
+          </div>
+           <div class="ac-progress-box" >
+            <p class="university-title">BYU-Idaho</p>
+                <div class="ac-name-credits">
+                    <p class="bachelors-name">Web & Computer Programming </p>
+                   <p class="total-credits" >6 / 12</p> 
+            </div>
+                    <div class="ac-progress-bar-box">
+            <div class="ac-progress-bar" ></div>
+            <p class="progress-bar-text" >0% Completed</p>
+            </div>
+
+                <div class="ac-content-description">
+                <p class="certificates certificate-1">CSE210 - Programming with Classes</p>
+                <p class="certificates certificate-2">WDD131 - Dynamic Web Fundamentals </p>
+                <p class="certificates certificate-3">WDD231 - Web Frontend Development I </p>
+                </div>
+            <p class="ac-gpa">GPA:3.72</p>    
+          </div>
+            <div class="ac-progress-box" >
+            <p class="university-title">BYU-Idaho</p>
+                <div class="ac-name-credits">
+                    <p class="bachelors-name">Software Development v2022SP</p>
+                   <p class="total-credits" >0 / 15</p> 
+            </div>
+                    <div class="ac-progress-bar-box">
+            <div class="ac-progress-bar" ></div>
+            <p class="progress-bar-text" >0% Completed</p>
+            </div>
+
+                <div class="ac-content-description">
+                <p class="certificates certificate-1">CSE212 - Programming with DS</p>
+                <p class="certificates certificate-2">CSE270 - Software Testing</p>
+                <p class="certificates certificate-3">CSE300 - Professional Readiness </p>
+                </div>
+            <p class="ac-gpa">GPA:3.72</p>    
+          </div>
+            <div class="ac-progress-box" >
+            <p class="university-title">BYU-Idaho</p>
+                <div class="ac-name-credits">
+                    <p class="bachelors-name">Religion Courses </p>
+                   <p class="total-credits" >7 / 14</p> 
+            </div>
+                    <div class="ac-progress-bar-box">
+            <div class="ac-progress-bar" ></div>
+            <p class="progress-bar-text" >0% Completed</p>
+            </div>
+
+                <div class="ac-content-description">
+                <p class="certificates certificate-1">REL 290 A - The Divine Gift of Forgiveness </p>
+                <p class="certificates certificate-2">REL C 225 - Foundations of restoration </p>
+                <p class="certificates certificate-3">RELPC 200 - The Eternal Family </p>
+                </div>
+            <p class="ac-gpa">GPA:3.72</p>    
+          </div>
+            <div class="ac-progress-box" >
+            <p class="university-title">BYU-Pathway</p>
+                <div class="ac-name-credits">
+                    <p class="bachelors-name">Web & Computer Programming </p>
+                   <p class="total-credits" >9 / 9</p> 
+            </div>
+                    <div class="ac-progress-bar-box">
+            <div class="ac-progress-bar" ></div>
+            <p class="progress-bar-text" >0% Completed</p>
+            </div>
+
+                <div class="ac-content-description">
+                <p class="certificates certificate-1">PC101 - Life Skills</p>
+                <p class="certificates certificate-2">PC102 - Professional Skills</p>
+                <p class="certificates certificate-3">PC103 - University Skills</p>
+                </div>
+            <p class="ac-gpa">GPA:3.72</p>    
+        </div> 
+     </div>
+
+        </div>
+
+        <footer></footer>
+    </main>
+
+</body>
+
+</html>

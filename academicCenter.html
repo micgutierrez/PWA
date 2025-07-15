@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Academic Center</title>
+    <link rel="icon" href="src/logos/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body class="body-download">
+
+    <!-- Header and Navigation  -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="src/logos/logo.svg" alt="Companion" /></a>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="academicCenter.html">Academic Center</a>
+            </li>
+            <li>
+                <a href="apps.html">Apps</a>
+            </li>
+            <hr class="menu-hr">
+            <li class="menu-hidden">
+                <a href="#">Profile</a>
+            </li>
+            <li class="menu-hidden">
+                <a href="#">Account</a></li>
+            <hr class="menu-hr">
+            <li class="menu-hidden">
+                <a href="signIn.html" class="alert">Sign Out</a></li>
+            <li class="menu-hidden-mobile">
+                <a href="#" class="settings-menu"><span class="material-icons">settings</span></a>
+            </li>
+        </ul>
+        <!--Hamburguer Menu-->
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeProfileModal">&times;</span>
+
+            <ul class="profile-options">
+                <li>
+                    <a href=""><span class="material-icons">account_circle</span> Edit Profile</a>
+                </li>
+                <li>
+                    <a href=""><span class="material-icons">settings</span> Settings</a>
+                </li>
+                <li><a href="signIn.html"><span class="material-symbols-outlined">logout</span> Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main  main-box-download">
+        <div class="main-box">
+            <div class="ac download-box">
+                <img src="/src/ads/app-phone.png" alt="Download Companion on Phone">
+                <div class="download-text mobile-only">
+                    <h2>All Features. One Download.</h2>
+                    <p clas>Download now to unlock all features of the Academic Center. Register for courses, follow
+                        recommended actions, track your academic progress, and more!</p>
+                </div>
+                <div class="badges-box mobile-only">
+                    <img src="./src/badges/GetItOnGooglePlay_Badge_Web_color_English 1.svg" alt="Google Play Badge">
+                    <img src="./src/badges/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917 1.png"
+                        alt="App Store Badge">
+                </div>
+
+                <div class="signIn-download-desktop  downloadApp-box desktop-only">
+                    <div class="border-box border-box-ac"></div>
+
+                    <div class="download-text ac-download-text desktop-only">
+
+                        <h2>All Features. One Download.</h2>
+                        <p clas>Download now to unlock all features of the Academic Center. Register for courses, follow
+                            recommended actions, track your academic progress, and more!</p>
+                    </div>
+                    <div class="qr-box desktop-only">
+                        <img src="./src/ads/qr-code.svg" alt="Companion app QR Code">
+                    </div>
+                </div>
+                <!-- Loading Screen -->
+                <div class="loading-box">
+                    <div id="loading-screen">
+                        <p>Loading Academic Center, please wait...</p>
+                        <div class="spinner"></div>
+                    </div>
+
+                    <div id="button-box" class="button-box" style="display: none;">
+                      <a href="academicProgress.html"> <button class="signIn-button ac-web-button">Use web version</button></a> 
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </main>
+    <footer class="signIn-footer ">
+        <div class="byu-logo-footer">
+            <img src="./src/logos/byu-logo-footer.svg" alt="BYU Pathway Worldwide" />
+
+            <p>By downloading, accessing, or using Companion, you agree to these <a href="#">Terms of Use</a>. Please
+                read
+                them carefully before using the app.</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
