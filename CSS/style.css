@@ -58,137 +58,137 @@ nav li a {
 }
 
 
-.alert,
-.outageBanner {
-	color: var(--alerts-red);
-}
+
 
 /*Body*/
 
-body {
-	min-height: 100vh;
-	color: var(--text);
-}
-
 body::after {
-	content: "";
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	-webkit-backdrop-filter: blur(6px);
-	backdrop-filter: blur(6px);
-	background-color: rgba(0, 0, 0, 0.3);
-	opacity: 0;
-	-webkit-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
-	transition: opacity 0.3s ease;
-	z-index: 10;
-	pointer-events: none;
+  content: ''; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
+
 }
 
 body.menu-open::after {
-	opacity: 1;
-	pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 body.menu-open {
-	overflow: hidden;
+  overflow:hidden; 
 }
+
 
 /*Navigation*/
 nav {
-	background-color: white;
-	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	padding: 0 20px;
-	height: 80px;
-	position: relative;
-	width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  height: 80px;
+  position: relative;
+  width: 100%;
 }
 
+
 nav ul {
-	list-style: none;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 20px;
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100vh;
-	width: 250px;
-	max-width: 300px;
-	background-color: white;
-	padding: 100px 20px 20px;
-	z-index: 11;
-	-webkit-transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	transform: translateX(100%);
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
-	transition: -webkit-transform 0.4s ease-in-out;
-	-o-transition: transform 0.4s ease-in-out;
-	transition: transform 0.4s ease-in-out;
-	transition:
-		transform 0.4s ease-in-out,
-		-webkit-transform 0.4s ease-in-out;
-	-webkit-box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
-	box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  max-width: 300px;
+  background-color: white;
+  padding: 100px 20px 20px;
+  z-index: 11;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul.active {
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-	transform: translateX(0);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 
+
 nav li a {
-	position: relative;
-	display: inline-block;
-	color: var(--text);
-	text-decoration: none;
-	padding: 10px 5px;
-	-webkit-transition: color 0.3s ease;
-	-o-transition: color 0.3s ease;
-	transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.125rem; /* 18px */
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 5px;
+  transition: color 0.3s ease;
 }
 
 nav li a::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 0%;
-	height: 3px;
-	background-color: var(--pw-gold);
-	-webkit-transition: width 0.4s ease-in-out;
-	-o-transition: width 0.4s ease-in-out;
-	transition: width 0.4s ease-in-out;
-	border-radius: 2px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(--pw-gold);
+  transition: width 0.4s ease-in-out;
+  border-radius: 2px;
 }
 
 nav li a:hover::after {
-	width: 100%;
+  width: 100%;
 }
 
-nav li {
-	text-align: right;
+
+
+
+nav li{
+  text-align: right;
 }
 
 nav ul hr {
-	width: 50%;
-	margin: 20px 0 20px auto;
+  width: 50%;
+  margin: 20px 0 20px auto;
+}
+
+
+.alert {
+  color: var(--alerts-red);
 }
 
 
@@ -874,7 +874,6 @@ button {
 
 .form-group input[type="submit"] {
 	background-color: var(--pw-gold);
-	color: var();
 	border: none;
 	cursor: pointer;
 	-webkit-transition: background-color 0.3s ease;
@@ -985,7 +984,7 @@ button {
 	}
 
 	.service-card p {
-		font-size: clamp(0.8125, 3vw, 1rem);
+		font-size: clamp(0.8125rem, 3vw, 1rem);
 	}
 
 	/*SignIn.html*/
@@ -1144,7 +1143,6 @@ button {
 		transform: none;
 		-webkit-box-shadow: none;
 		box-shadow: none;
-		background-color: none;
 		-webkit-transition: none;
 		-o-transition: none;
 		transition: none;
